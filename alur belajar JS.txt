@@ -1,0 +1,9 @@
+Alur BelajaR JavaScript
+
+1. JS dasar
+2. JS Object Oriented Programming
+3. JS Standard Library
+4. JS Modules
+5. JS Dom
+6. Todo List
+7. JS Async

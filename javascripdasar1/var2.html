@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+  </head>
+  <body>
+    <script>
+      const name = "Muhammad Susilo"
+      const template = `Name : ${name}`
+      console.info(template);
+
+      const nilai = "50"
+      const template2 = `Name : ${name}, lulus : ${nilai < 70}`
+
+      console.info(template2);
+
+      const lulusAbsensi = "50";
+      const template3 = `Name : ${name},lulus : ${nilai < 40 } ,lulusAbsensi : ${lulusAbsensi < 40}`
+
+      console.info(template3)
+       
+      const multiline = ` Muhammad Susilo
+Sekarang belajar,
+muhammad,
+susilo`;
+
+
+      document.writeln("<pre>")
+      document.writeln(multiline)
+      document.writeln("</pre>")
+
+      const value1 = parseInt("salah");
+      const value2 = 1;
+      const sum = value1 + value2;
+
+      document.writeln(`<p>${sum}</p> `)
+    </script>
+  </body>
+</html>

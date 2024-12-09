@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In</title>
+</head>
+<body>
+    <script>
+        // untuk mengambil data dalam objek
+        const person = {
+            firstName : "Muhammad",
+            middleName : "Andi",
+            lastName : "Susilo"
+        };
+
+        for (const property in person){
+            document.writeln(`<p>${property} : ${person[property]}</p>`);
+        }
+
+
+        const names = ["Muhammad", "Andi", "Susilo"];
+        for (const index in names){
+            document.writeln(`<p>${index} : ${names[index]}</p>`)
+        }
+
+
+    </script>
+</body>
+</html>

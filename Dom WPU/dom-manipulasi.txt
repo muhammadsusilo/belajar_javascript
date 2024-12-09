@@ -1,0 +1,20 @@
+element.innerHTML
+element.style.property
+element.setAttribute()
+element.classlist 
+ada banyak lagi bisa cek di w3school dan mdn 
+
+element.classlist.add()
+element.classlist.remove()
+element.classlist.toggle()
+element.classlist.item()
+element.classlist.contains()
+element.classlist.replace()
+bisa cek lengkap di di w3school dan mdn
+
+document.createElement
+document.createtextelement
+node.appenchild
+node.innerbefore
+parentnode.removechild
+parentnode.replacechild

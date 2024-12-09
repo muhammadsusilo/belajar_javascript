@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        /*size = panjang map
+        clear() = menghapus semua isi map
+        delete(key) = menghapus data Map berdasarkan key
+        get(key) :value = mendapatkan data map
+        has(key) :boolean = mengecek map berisi data key
+        set(key,value) = mengubah data map dengan key = value
+        forEach((key,value)=>) = melakukan iterasi map
+        */
+
+        const map = new Map();
+        map.set("Nama", "Muhammad Susilo");
+        map.set("Addres", "Indonesia");
+
+        console.info(map);
+        console.info(map.get("Nama"));;
+        console.info(map.get("Addres"));
+
+        map.forEach((value, index) => console.info(`${index}, ${value}`))
+
+
+    </script>
+</body>
+</html>

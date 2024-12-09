@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constractor Inheritance</title>
+</head>
+<body>
+    <script>
+
+        function Employee(firstName){
+            this.firstName = firstName;
+            this.SayHello = function (name){
+                console.info(`Hi ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+
+        function Manager(firstName,lastName){
+            this.lastName = lastName;
+            Employee.call(this, firstName)
+        }
+
+        const silo = new Manager("Muhammad","Susilo");
+        console.info(silo);
+
+        silo.SayHello("faqih")
+    </script>
+</body>
+</html>

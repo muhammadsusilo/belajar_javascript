@@ -1,0 +1,4 @@
+
+
+Tipe data number bilangan bulat / desimal = jenis data
+Tipe data boolean = true /false

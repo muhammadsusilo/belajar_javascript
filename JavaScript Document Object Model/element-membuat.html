@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Element</title>
+  </head>
+  <body>
+    <div id="content" class="content"></div>
+    <script>
+      const content = document.getElementById("content");
+
+      //create h1
+      const title = document.createElement("h1");
+
+      // masukkan konten
+      title.textContent = "aku"
+      // tambahkan konten
+      content.appendChild(title)
+   
+      const descripsi = document.createElement("h2");
+        descripsi.textContent = "Selamat Belajar";
+        content.appendChild(descripsi);
+    </script>
+  </body>
+</html>

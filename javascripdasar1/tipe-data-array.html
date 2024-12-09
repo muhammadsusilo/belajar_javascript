@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+/*
+rray.push      = menambah data array
+array.length     = untuk mendapatkan panjang array
+array[index]        = mendapat data di posisi index
+array[index]value   = mengubah data di posisi index
+delete array [index] = menghapus data di posisi index, 
+                        namun index tidak bergeser*/
+        let arrayKosong =[];
+
+        let arrayName = ["Muhammad", "Susilo", "Erlin"];
+
+        const names =[];
+        names.push("Muhammad");
+        names.push("Susilo", "Erlin") ;
+        
+        console.table(names);
+
+        console.info(names[0]);
+        console.info(names[1]);
+
+        names[0] = "Programmer Zaman Now";
+        names[1] = "Muhammad Susilo";
+        
+        console.table(names);
+
+        delete names [1]
+        
+        console.table(names);
+
+        names[1] = "Di ubah lagi";
+        names.push(1,2,3,4,5,6,7)
+        names.push(["Muhammad", "Susilo"]);
+        console.table(names);
+
+    </script>
+</body>
+</html>

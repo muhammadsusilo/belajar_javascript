@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 50px;
+    font-family: arial;
+    background-color: gray;
+}
+.container {
+    width: 900px;
+    margin: auto;
+}
+.kartu {
+    display: inline-block;
+    width: 220px;
+    padding: 0 80px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 80px;
+    border-radius: 40px;
+    background-color:white;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.kartu a {
+    text-decoration: none;
+}
+.kartu a:hover {
+    text-decoration: underline;
+}
+.kartu img {
+    float: left;
+    margin: 0 10px 0 -80px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+.kartu .nama, .kartu .telp {
+    display: block;
+    line-height: 20px;
+    padding: 0 5px;
+}
+.kartu .nama {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.kartu .telp {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #aaa;
+}
+.kartu .close {
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    cursor: pointer;
+}
+.kartu:hover .close {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

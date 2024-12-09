@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode</title>
+</head>
+<body>
+    <script>
+
+        {
+            //encode url dan decode url
+
+            const url ="http://www.wikipedia.com/?name=muhammad&susilo&erlin=fransika";
+            console.info(url);
+
+            const encoded = encodeURI(url);
+            console.info(encoded);
+
+            const decoded = decodeURI(url);
+            console.info(decoded);
+
+        }
+        {
+            //encodeurlcomponen dan decodeurlcomponen
+
+            const value = "muhammad&susilo&erlin=fransika";
+            const url ="http://www.wikipedia.com/?name=";
+            console.info(url + value);
+
+            const encoded = encodeURIComponent(value);
+            console.info(url + encoded);
+
+            const decoded = decodeURIComponent(encoded);
+            console.info(url +decoded);
+
+        }
+
+    </script>
+</body>
+</html>

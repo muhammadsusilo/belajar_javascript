@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegExp</title>
+  </head>
+  <body>
+    <script>
+      {
+        //Create Regex
+
+        const regex1 = /silo/;
+        const regex2 = new RegExp("Silo");
+        const regex3 = new RegExp(/silo/);
+      }
+
+      {
+        //exec = mencari data sesuai pola
+        //test = meng test data
+
+        const name = "Muhammad Susilo Erlin Fransiska";
+        const regex = /Susilo/;
+
+        const result = regex.exec(name);
+        console.info(result);
+        console.info(regex.exec("Tidak ada"));
+
+        const test = regex.test("Susilo");
+        console.info(test);
+        console.info(regex.test("Tidak ada"));
+      }
+      {
+        //regex modifier
+
+        /*
+        fitur regexp
+        assertions
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Assertions
+        carakter class
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class
+        grup range
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Groups and Ranges
+        quantifiers
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier
+
+        i = regex menjadi incase sensitif
+        g = mencari data keseluruan secara global
+        m = multiline pencarian tiap baris / enter
+        */
+        const name = "Muhammad SUSILO \nmuhammad\nSusilo susiLO";
+        const regex1 = /Susilo/gi;
+        const regex2 = /^Muhammad/gim;
+
+        let result;
+        while ((result = regex1.exec(name)) !== null) {
+          console.info(result);
+        }
+
+        while ((result = regex2.exec(name)) !== null) {
+          console.info(result);
+        }
+      }
+
+      {
+        //advance regex
+
+        const regex = /il[oaiue]/gi;
+
+        const name = "ilo ila ile edo ika ila";
+        let result;
+        while ((result = regex.exec(name)) !== null) {
+          console.info(result);
+        }
+      }
+      {
+        /* match = mencari semua data
+        search = mencari index
+        replace = mengubah data
+        replaceAll = mengubah semua data
+        split = memotong string
+        */
+        const name = " ejo ilo ila ile edo ika ila";
+
+        console.info(name.match(/il[oaiue]/gi));
+        console.info(name.search(/il[oaiue]/gi));
+
+        console.info(name.replace(/il[oaiue]/gi, "Saya"));
+        console.info(name.replaceAll(/il[oaiue]/gi, "erlin"));
+        console.info(name.split(/i/gi));
+      }
+    </script>
+  </body>
+</html>

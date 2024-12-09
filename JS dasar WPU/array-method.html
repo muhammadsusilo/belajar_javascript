@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Method</title>
+    <!-- untuk belajar method array bisa cek di website mdn -->
+  </head>
+  <body>
+    <script>
+      // 1. push  untuk memasukkan  atau mendorong elemen baru pada array
+      const buah = ["salak", "sirsak"];
+      buah.push("semangka", "Melon", "Jambu", "Pisang");
+      console.info(buah);
+
+      // 2.  join untuk menampilkan elemen dengan benar
+      const nama = ["Silo", "Erlin", "Teti"];
+      console.info(nama.join());
+
+      // 3. pop menghilangkan element
+      buah.pop();
+      buah.pop();
+      console.info(buah);
+      // 4. unsift dan sift
+      //   menambahkan element pertama
+      nama.unshift("warsono", "rohati");
+      console.info(nama);
+
+      // menghapus element pertama
+      buah.shift();
+      console.info(buah);
+
+      //   5. splice artinya menyambung
+      // splice(indexAwal, mauDihapusBerapa(opsional), elemenBaru1(opsional) , ..........)
+
+      const binatang = ["Kucing", "Ikan", "Harimau", "Singa"];
+      binatang.splice(1, 0, "Semut", "Tikus");
+      console.info(binatang);
+
+      //   slice unctuk mengiris
+      const binatang1 = ["Kucing", "Ikan", "Harimau", "Singa","Gajah"];
+      binatang2 = binatang1.slice(1, 3);
+      console.info(binatang2.join(" - "));
+      
+    </script>
+  </body>
+</html>

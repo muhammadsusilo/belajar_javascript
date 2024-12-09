@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursif</title>
+  </head>
+  <body>
+    <!-- Fungsi yang memanggil dirinya sendiri -->
+    <script>
+      // contoh for
+      //   for (let i = 10; i >= 1; i--) {
+      //     console.info(i);
+      //   }
+
+      // recursif
+      function angka(n) {
+        console.log(n);
+        return angka(n - 1);
+      }
+      // angka({) ini saya hentikan
+
+      // basecase untuk pemberhentian recursif
+      function masukkanAngka(n) {
+        if (n === 0) {
+          return; // untuk berhenti
+        }
+        console.log(n);
+        return masukkanAngka(n - 1);
+      }
+      masukkanAngka(10);
+    </script>
+  </body>
+</html>

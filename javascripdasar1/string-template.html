@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = `Muhammad Susilo`;
+      const firsName = `Muhammad`;
+      const lastName = `Susilo`;
+      const template = `Name : ${firsName} ${lastName}`;
+
+      console.info(template);
+
+      const nilai = 67;
+      const template2 = `Name : ${name}, lulus : ${nilai > 70}`;
+
+      console.info(template2);
+
+      document.writeln(`
+       muhammad susilo
+        programmer 
+        zaman 
+        now
+        `);
+
+        const namaUniv = `Terbuka`
+        const template3 = `Universitas : ${namaUniv} `;
+        console.info(template3)
+
+        const nam = ` Muhammad Susilo`;
+        const nilaiKu = 71;
+        const template4 = `Nama : ${nam}\nLulus :${nilaiKu > 70}\nKampus : ${template3}`
+
+        console.info(template4);
+
+    </script>
+  </body>
+</html>

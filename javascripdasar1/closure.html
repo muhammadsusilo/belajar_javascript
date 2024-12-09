@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <script>
+
+        function createAdder (value){
+            const owner = "iloo";
+
+            function add(param){ 
+                console.info(owner);
+                return value + param;
+            }
+            return add;
+        }
+
+        const addTwo = createAdder(2);
+        /*function addTwo(param){
+            console.info("iloo");
+            return 2 + param;
+        } */
+
+        console.info(addTwo(10));
+        console.info(addTwo(20));
+
+
+        const addTen = createAdder(10);
+        /*function addTen(param){
+            console.info("iloo");
+            return 5 + param;
+        } */
+
+        console.info(addTen(10));
+        console.info(addTen(20));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+classlist.add()
+classlist.remove()
+classlist.toggle()
+classlist.item()
+classlist.contains()
+classlist.replace()
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <script>
+  //function yang ada di method
+        /*const person ={
+            name :"iloo",
+            sayHello: function (name){
+                alert (`Hello ${name}`);
+            }
+        }
+        
+        person.sayHello("Muhammad");
+        person.sayHello("Susilo");
+        */
+
+
+        //menambah method ke objek
+
+        const person = {
+            name :"iloo"
+        };
+
+        person.sayHello = function (name){
+            alert (`Hello ${name}`);
+        }
+
+        person.sayHello(`erlin`);
+
+
+    </script>
+</body>
+</html>

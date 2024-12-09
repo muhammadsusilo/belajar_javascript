@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function SayHello() {
+        //constractor function depannya huruf besart
+        this.firstName = "";
+        this.lastName = "";
+        this.mama = function (name) {
+          //bisa menambahkan method
+          console.info(`Hello ${name} my name is ${this.firstName}`);
+        };
+        this.iyu = function (names) {
+          console.info(`Hi ${names} nama saya ${this.firstName}`);
+        };
+      }
+
+      const silo = new SayHello(); //membuat Property
+      silo.firstName = "Teti";
+      silo.lastName = "Khalifah";
+      silo.mama("faqih");
+      silo.iyu("rohati");
+
+      const erlin = new SayHello();
+      erlin.firstName = "Muhammad";
+      erlin.lastName = "Susilo";
+      erlin.mama("feyza");
+      erlin.iyu("warsono");
+
+      console.log(silo);
+      console.log(erlin);
+
+      {
+        function Person(firstName, lastName) {
+          //parameter constractor
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.aku = function (name) {
+            console.info(`Hi ${name} My name is ${this.firstName}`);
+          };
+        }
+        const ilo = new Person("Muhammad", "Susilo");
+        ilo.aku("teti");
+
+        const silo = new Person("Erlin", "Fransiska");
+        silo.aku("teti");
+
+        console.info(ilo);
+        console.info(silo);
+      }
+    </script>
+  </body>
+</html>

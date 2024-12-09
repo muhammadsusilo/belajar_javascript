@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>for</title>
+  </head>
+  <body>
+    <script>
+      // catatan pembuatan perulangan
+
+      // nilai awal
+      // kondisi terminasi
+      // aksi dalam kondidi
+      // increment /decrement
+
+      for (let nilaiAwal = 1; nilaiAwal <= 10; nilaiAwal++) {
+        console.info("hello-world " + nilaiAwal + "x");
+      }
+
+      // latihan
+      let jumlahAngkot = 10;
+      let angkotBeroperasi = 6;
+      let juraganAngkot = 1;
+
+      while (juraganAngkot <= angkotBeroperasi) {
+        console.log(
+          "Angkot No. " + juraganAngkot + "x " + "beroperasi dengan baik"
+        );
+        juraganAngkot++;
+      }
+
+      for (
+        juraganAngkot = angkotBeroperasi + 1;
+        juraganAngkot <= jumlahAngkot;
+        juraganAngkot++
+      ) {
+        console.info("Angkot No." + juraganAngkot + "x " + "tidak beroperasi");
+      }
+      
+    </script>
+  </body>
+</html>

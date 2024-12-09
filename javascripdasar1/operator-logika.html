@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      /* Operator Logika
+    && { dan } false, false, false true
+    || { atau } true true true false
+    !  { Kebalikan }
+*/
+      const nilaiUjian = 76;
+      const nilaiAbsensi = 60;
+
+      const lulusUjian = nilaiUjian > 75;
+      document.writeln(lulusUjian);
+      const lulusAbsensi = nilaiAbsensi > 75;
+      document.writeln(lulusAbsensi);
+
+      const lulus = lulusUjian && lulusAbsensi;
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>

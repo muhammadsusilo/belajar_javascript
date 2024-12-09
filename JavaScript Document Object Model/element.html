@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="descripsi"></p>
+    <h2></h2>
+    <script>
+        const title = document.getElementById("title");
+        title.textContent = "Belajar JavaScript Dom";
+
+        const descripsi = document.getElementById("descripsi");
+        descripsi.textContent = "Selamat Belajar JavaScript";
+
+        const h2 = document.getElementsByTagName("h2")[0];
+        h2.textContent = "Muhammad Susilo";
+    </script>
+</body>
+</html>

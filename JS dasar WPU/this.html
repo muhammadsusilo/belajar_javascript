@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This</title>
+  </head>
+  <body>
+    <script>
+      // cara 1 - function declaration
+      function halo() {
+        console.info(this);
+        console.info("abc");
+      }
+      this.halo();
+      // mengakses properti global
+
+      // cara 2 - objek literal
+      var a = { nama: "Muhammad Susilo" };
+      a.saya = function () {
+        console.info(this);
+        console.info("silo");
+      };
+      a.saya();
+      // mengembalikan object yang bersangkutan
+
+      // cara 3 - function constructor
+      function Belajar() {
+        console.info(this);
+        console.info("Belajar This");
+      }
+      new Belajar();
+      var obj1 = new Belajar();
+      var obj2 = new Belajar();
+
+      //   mengembalikan objek yang baru di buat
+    </script>
+  </body>
+</html>

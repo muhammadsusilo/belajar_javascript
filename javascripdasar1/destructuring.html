@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+
+        {
+            //mengambil data dari array atau destructuring array
+            const names  =["Muhammad","Susilo","Erlin","teti","khalifah"];
+            const [firstName, middleName,lastName, ...others] = names;
+
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+            console.info(others);
+        }
+        {
+            //dalam object
+            const person ={
+                firstName :"Muhammad",
+                lastName : "Susilo",
+                address :{
+                    street:"Jalan Merpati",
+                    city :"Tegal",
+                    country :"Indonesia"
+                },
+                hobby :"game",
+                chanell :"Programmer Zaman Now"
+            };
+            const {firstName,lastName,address :{city,street,country}, ...others} = person;
+            console.info(firstName);
+            console.info(lastName);  
+            console.info(city);
+            console.info(street);
+            console.info(country);
+            console.info(others);
+        }
+
+        {
+            //destructuring function parameter part 1
+            function displayPerson({firstName,middleName,lastName}){
+                console.info(firstName);
+                console.info(middleName);
+                console.info(lastName);
+            }
+
+            const person ={
+                firstName :"Muhammad",
+                middleName :"Susilo",
+                lastName :"Erlin"
+            }
+            displayPerson (person);
+        }
+        {
+            //parameter part 2
+            function sum([first, second]){
+                return first + second;
+            }
+            console.info (sum([1,1]));
+            console.info (sum ([10,10]));
+        }
+        {
+            //default value destructuring array
+            const names = ["Muhammad","Susilo"];
+            const [firstName,middleName,lastName = "khalifah",...others] = names;
+
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+            console.info(others);
+        }
+        {
+            //merubah nama variable 
+            const person ={
+                firstName :"Muhammad",
+                lastName : "Susilo"
+            }
+                
+            const {firstName :  namaDepan,
+                    lastName :  namabelakang} = person;
+
+            console.info(namaDepan);
+            console.info(namabelakang);  
+        }
+    </script>
+</body>
+</html>

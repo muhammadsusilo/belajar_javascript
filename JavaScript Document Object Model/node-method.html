@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Method</title>
+  </head>
+  <body>
+    <div>
+      <ul id="menu">
+        <li id="aku">Aku</li>
+        <li id="saya">Saya</li>
+        <li id="kamu">Kamu</li>
+      </ul>
+    </div>
+    <script>
+      const menu = document.getElementById("menu");
+      menu.removeChild(document.getElementById("aku"));
+      menu.removeChild(document.getElementById("saya"));
+      menu.removeChild(document.getElementById("kamu"));
+     menu.appendChild(document.getElementById("kowen"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial;
+    background-color: rgb(217, 217, 217);
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: rgb(217, 217, 217);
+}
+
+.container {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav {
+    background-color: black;
+    color: gray;
+    bottom: 0;
+    position: fixed;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+nav a {
+    color: gray;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: green;
+    
+}

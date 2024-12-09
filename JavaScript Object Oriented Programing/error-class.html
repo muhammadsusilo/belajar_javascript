@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Error</title>
+  </head>
+  <body>
+    <script>
+        class Validation extends Error{
+            constructor(message,field){
+                super(message);
+                this.field = field;
+            }
+        }
+      class Tambah {
+        static sum(...numbers) {
+          if (numbers.length === 0) {
+            throw new Validation("Total Parameter Harus lebih dari nol","numbers");
+          }
+
+          let total = 0;
+          for (const number of numbers) {
+            total += number;
+          }
+          return total;
+        }
+      }
+
+      try {
+        console.info(Tambah.sum());
+        console.info("silo");
+      } catch (error ) {
+          if(error instanceof Validation){
+            console.info(`Terjadi error  di field ${error.field} dengan eror ${error.message}`)
+          }else{
+            console.info(`Terjadi error ${error.message}`)
+          }
+      } finally {
+        console.info("Program Selesai");
+      }
+
+      //console.info(Tambah.sum());
+      console.info("Silo");
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Instanceof </title>
+</head>
+<body>
+    <script>
+
+        class Employee{
+
+        }
+
+        class Manager extends Employee{
+
+        }
+
+        const erlin = new Employee();
+        const silo = new Manager();
+
+        console.info(erlin instanceof Employee); //true
+        console.info(erlin instanceof Manager); //false
+
+        // hasil truee karena turunan dari employee
+        console.info(silo instanceof Employee); //true
+        console.info(silo instanceof Manager); //true
+
+    </script>
+</body>
+</html>

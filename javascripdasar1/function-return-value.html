@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Return Value</title>
+</head>
+<body>
+    <script>
+        //membuat function dengan parameter dan return value
+        function sayHello (firstName, lastName){
+            const say = `Hello ${firstName} ${lastName}`;
+            return say ;
+        }
+        //memanggil function dan menangkap return valuenya
+         const result = sayHello("Muhammad", "Susilo");
+         document.writeln(`${result}`);
+
+
+
+        function lulus (value) {
+            if (value > 90){
+                return "Sangat Baik";
+            } else if (value  > 80) {
+                return "baik";
+            } else if (value >70 ){
+                return "Cukup";
+            } else if (value >60){
+                return "lumayan";
+            } else {
+                return "Coba lagi"
+            }
+        }
+
+        const kelulusan = lulus(55);
+        document.writeln(`<p>${kelulusan}</p>`);
+
+
+
+
+
+        //menghentikan kode program return
+        function container (array,searchValue){
+            for (const element of array) {
+                console.info(`Iterasi Element ${element}`)
+               if (element === searchValue){
+                return true;
+               }
+            }
+            return false;
+        }
+
+        const array = [1,2,3,4,5,6,7,8,9,0]
+        const search =6 ;
+        const found = container(array,search)
+        document.writeln (`<p>${found}</p>`)
+
+
+    
+    </script>
+</body>
+</html>

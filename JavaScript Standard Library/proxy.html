@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy</title>
+</head>
+<body>
+    <script>
+        //proxy = mewakili sebuah data
+        const target = {
+            middleName : "Erlin"
+        }
+
+        const handler = {
+            get : function (target,property){
+                console.info(`Akses Property : ${property}`)
+                return target[property];
+            },
+            set : function (target, property, value){
+                console.info(`Change Property ${property} : ${value}`)
+                target[property] = value;
+            }
+        };
+
+        const proxy = new Proxy(target,handler);
+        proxy.firstName = "Muhammad";
+        proxy.lastName = "Susilo";
+
+        console.info(proxy.firstName);
+        console.info(proxy.middleName);
+        console.info(proxy.lastName);
+
+        console.info(target);
+        console.info(handler);
+
+
+
+    </script>
+</body>
+</html>

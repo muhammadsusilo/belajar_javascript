@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodelist Static</title>
+  </head>
+  <body>
+    <ul id="menu1">
+      <li id="aku">satu</li>
+      <li id="saya">dua</li>
+      <li id="kamu">tiga</li>
+    </ul>
+
+    <ul id="menu2">
+      <li id="firstName">Muhammad</li>
+      <li id="middleName">Susilo</li>
+      <li id="lastName">Erlin</li>
+    </ul>
+    <script>
+      /* element.chilNodes bersifat live
+          document.querySelectorAll() bersifat static */
+
+          let list = document.querySelectorAll("li")
+
+      const menu1 = document.getElementById("menu1");
+      menu1.appendChild(document.createElement("li"));
+      menu1.appendChild(document.createElement("li"));
+
+      console.info(list);
+
+      list = document.querySelectorAll("li")
+
+      console.info(list);
+
+      //kesimpulan nodelist untuk sekumpulan nodelist saja
+    </script>
+  </body>
+</html>

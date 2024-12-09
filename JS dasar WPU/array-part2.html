@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array part 2</title>
+    <!-- untuk belajar  method array lebih lengkap bisa cek di website mdn -->
+  </head>
+  <body>
+    <script>
+      //push untuk menambahkan elemen pada array yang akan di tepatkan di belakangnya
+
+      const buah = ["salak", "sirsak"];
+      buah.push("semangka", "Melon", "Jambu", "Pisang");
+
+      console.info(buah);
+
+      //   2. menghapus array
+
+      const nama = ["sana", "sini", "sene"];
+      nama[1] = undefined;
+
+      console.info(nama);
+
+      //   3. menampilkan isi array dengan benar
+      // method length menghitung jumlah pada array
+      let asli = ["rere", "roro", "riri"];
+
+      for (let i = 0; i < asli.length; i++) {
+        console.info(asli[i]);
+      }
+    </script>
+  </body>
+</html>

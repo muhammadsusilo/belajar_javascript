@@ -1,0 +1,67 @@
+{
+    "namaRestoran": "Mie Gacoan Slawi",
+    "since": 2012,
+    "Location": {
+        "country": "Indonesia",
+        "province": "Jawa Tengah",
+        "regency": "Tegal Regency",
+        "city": "Slawi"
+    },
+
+    "menurestoran": [{
+        "kategori1": [{
+                "kategori": "Mie",
+                "nama": "Mie Suit",
+                "addintion": "Bakso Goreng",
+                "harga": 12000
+            },
+            {
+                "kategori": "Mie",
+                "nama": "Mie Hompimpa",
+                "addintion": "Bakso Goreng",
+                "harga": 15000
+            },
+            {
+                "kategori": "Mie",
+                "nama": "Mie Gacoan",
+                "addintion": "Pangsit Goreng",
+                "harga": 12000
+            }
+        ],
+        "kategori2": [{
+                "kategori": "Dimsum",
+                "nama": "Pangsit Goreng",
+                "addintion": "Es Teh",
+                "harga": 9000
+            },
+            {
+                "kategori": "Dimsum",
+                "nama": "Siomay",
+                "addintion": "Jus Mangga",
+                "harga": 10000
+            }
+        ],
+        "kategori3": [{
+            "kategori": "Es Gobak Sodor",
+            "nama": "Es Gobak Sodor",
+            "addintion": "Susu and 2 es",
+            "harga": 10000
+        }, {
+            "kategori": "Es Gobak Sodor",
+            "nama": "Es Teklek",
+            "addintion": " Tidak",
+            "harga": 6000
+        }, {
+            "kategori": "Es Gobak Sodor",
+            "nama": "Es Petak Umpet",
+            "addintion": "Tidak",
+            "harga": 5000
+        }, {
+            "kategori": "Es Gobak Sodor",
+            "nama": "Es Sluku Bathok",
+            "addintion": "2 es",
+            "harga": 12000
+        }]
+    }]
+
+}

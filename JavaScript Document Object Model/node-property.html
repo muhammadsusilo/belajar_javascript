@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Property</title>
+  </head>
+  <body>
+    <div>
+      <ul id="menu">
+        <li id="aku">Aku</li>
+        <li id="saya">Saya</li>
+        <li id="kamu">Kamu</li>
+      </ul>
+    </div>
+    <script>
+
+      const menu = document.getElementById("menu");
+      console.info(menu);
+      console.info(menu.childNodes);
+
+      const saya = document.getElementById("saya");
+      console.info(saya);
+      console.info(saya.textContent);
+      console.info(saya.previousSibling);
+      console.info(saya.nextSibling);
+      
+
+    </script>
+  </body>
+</html>

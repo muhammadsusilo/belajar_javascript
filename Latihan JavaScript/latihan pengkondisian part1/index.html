@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengkodisian Part 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2></h2>
+      <input type="text" placeholder="Masukkan nilai" />
+      <button>Submit</button>
+    </div>
+    <script>
+
+      const data = {
+        jawaban: document.getElementsByTagName("h2")[0],
+        masuk: document.getElementsByTagName("input")[0],
+        button : document.getElementsByTagName("button")[0],
+      };
+      
+      data.button.addEventListener("click", function () {
+        if (data.jawaban > 95) {
+          console.info('Selamat anda lulus dengan "SANGAT BAIK"');
+        } else if (data.jawaban > 85) {
+          console.info('Selamat anda lulus dengan "BAIK"');
+        } else if (data.jawaban > 70) {
+          console.info("Selamat Anda Lulus");
+        } else {
+          console.info("Silahkan Mulai Lagi");
+        }
+      });
+    </script>
+  </body>
+</html>

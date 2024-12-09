@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Statement</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            fullName : "Muhammad",
+            lastName : "Susilo"
+        }
+
+        with (person) {
+            console.info(fullName);
+            console.info(lastName);
+        }
+      
+        const names = ["Muhammad", "Susilo"]
+
+        with (names){
+            console.info (names[1]);
+        }
+    </script>
+</body>
+</html>

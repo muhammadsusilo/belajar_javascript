@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Muhammad</h1>
+    <script>
+      //   const silo = {
+      //     firstName: "Muhammad",
+      //     lastName: "Susilo",
+      //   };
+
+      function Employee(firstName){
+            this.firstName = firstName;
+            this.SayHello = function (name){
+                console.info(`Hi ${name}, my name is ${this.firstName} ${this.lastName}`);
+            }
+        }
+        function Manager( firstName,lastName ){
+            this.lastName = lastName ;
+            Employee.call(this, firstName)
+        }
+
+        const silo = new Manager("Muhammad","Susilo");
+        console.info(silo);
+
+        silo.SayHello("faqih");
+
+        class Ilo {
+            constructor(name){
+                console.info(`Hi my name is ${name}`)
+            }
+        }
+
+        const belajar = new Ilo("Muhammad Susilo");
+    </script>
+  </body>
+</html>

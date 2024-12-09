@@ -1,0 +1,37 @@
+Escape sequence atau untuk menambahkan tanda baca di java script
+\n  Enter
+\t  Tab
+\'  petik satu
+\"  petik dua
+\\  sles
+
+operator aritmatika
++   pertambahan
+-   pengurangan
+*   perkalian
+**  exponesial
+/   pembagian
+%   sisa bagi
+
+operator perbandingan 
+	>	lebih dari
+	<	kurang dari
+	>=	lebih dari sama dengan
+	<=	kurang dari sama dengan
+	==	sama dengan
+	===	sama dengan dan sama tipe
+	!=	tidak sama dengan
+	!==	tidak sama dengan atau tidak sama tipe
+
+operator logika
+	&&	dan ( apabila salah satu bernilai false maka hasilnya false )
+	||	atau ( apabila salah satu bernilai true maka hasilnya true )
+	!	kebalikan ( kebalikan dari true atau false )
+
+mengkonfersi string ke number
+  parselnt( string )      bilangan bulat 
+  parseFloat ( string )   bilangan pecahan
+  Number ( string )       bilangan bulat atau pecahan
+  number.toString()       mengkonfersi number to string
+
+NaN = Not a Number adalah bukan number 

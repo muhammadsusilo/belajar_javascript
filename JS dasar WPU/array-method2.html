@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Method part 2</title>
+  </head>
+  <body>
+    <script>
+      // forEach
+      let angka = [1, 5, 3, 2, 4, 8, 6, 7];
+      angka.forEach(function (e) {
+        console.log(e);
+      });
+      // map mengembalikan array
+      angka2 = angka.map(function (e) {
+        return e * 2;
+      });
+
+      console.info(angka2);
+
+      // sort mengurutkan
+      let angka3 = [1 , 10, 5, 3, 2, 4, 8, 6, 7];
+      angka3.sort(function(a,b){
+        return a- b;
+      });
+      console.info(angka3.join());
+    </script>
+  </body>
+</html>

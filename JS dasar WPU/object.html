@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // cara membuat Object
+      // 1.Object Literal
+      //   let mhs1 = {
+      //     nama: "Muhammad Susilo",
+      //     umur: 20,
+      //     Jurusan: "Sistem Informasi",
+      //     Alamat: {
+      //       jalan: "lawu",
+      //       Desa: "Blubuk",
+      //       Kecamatan: "Dukuhwaru",
+      //     },
+      //   };
+
+      //   let mhs2 = {
+      //     nama: "Muhammad Susilo",
+      //     umur: 20,
+      //     Jurusan: "Sistem Informasi",
+      //     Alamat: {
+      //       jalan: "lawu",
+      //       Desa: "Blubuk",
+      //       Kecamatan: "Dukuhwaru",
+      //     },
+      //   };
+
+      //   2. function deklaration
+      function untukMhs(nama, umur, alamat) {
+        var mhs = {};
+        mhs.nama = nama;
+        mhs.umur = umur;
+        mhs.alamat = alamat;
+        return mhs;
+      }
+
+      mhs3 = untukMhs("silo", 20, "tegal");
+      mhs4 = untukMhs("dika", 29, "tegal");
+
+      // 3. construktor function
+      function Mahasiswa(nama, umur, jurusan) {
+        this.nama = nama;
+        this.umur = umur;
+        this.jurusan = jurusan;
+      }
+
+      let mhs5 = new Mahasiswa("silo", 20, "si");
+    </script>
+  </body>
+</html>

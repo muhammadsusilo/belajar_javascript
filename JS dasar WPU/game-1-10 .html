@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Sederhana | pilihan 1-10</title>
+  </head>
+  <body>
+    <script>
+      let lagi = true;
+      while (lagi) {
+        // menangkap pilihan player
+        let p = prompt(
+          "Silahkan masukkan angka tebakan \nMasukkan angaka 1 - 10"
+        );
+
+        // mencari pilihan komputer
+        // membangkitkan bilangan random
+        let comp = Math.floor(Math.random() * 10) + 1;
+
+        // Alur Permainan
+        let hasil = "";
+        let mas = 3;
+        for (let mas = 3; mas >= 1; mas--) {
+          if (p == comp) {
+            hasil = "Benar";
+            alert("Angka tebakan anda" + hasil + ".");
+            break;
+          } else if (p != comp && mas > 1) {
+            hasil = mas < comp ? "terlalu Rendah" : "terlalu Tinggi";
+
+            p = prompt("angka tebakan anda" + hasil + "\ncoba tebak lagi");
+          } else if (p != comp && mas == 1) {
+            hasil = "Salah";
+            alert(
+              "Angka tebakan anda" + hasil + " \nKesempatan anda sudah habis"
+            );
+          }
+        }
+        lagi = confirm("mau main lagi ??");
+      }
+
+      alert("terima kasih telah bermain");
+
+      
+
+    </script>
+  </body>
+</html>

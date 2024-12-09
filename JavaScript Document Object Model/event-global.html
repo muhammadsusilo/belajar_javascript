@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Global</title>
+  </head>
+  <body>
+    <input id="clikMe" type="button" value="clik me!" />
+
+    <script>
+      const button = document.getElementById("clikMe");
+      button.onclick = function () {
+        button.setAttribute("value", "Ini Sudah di klik");
+        console.info("Button di klik");
+      };
+
+    </script>
+  </body>
+</html>

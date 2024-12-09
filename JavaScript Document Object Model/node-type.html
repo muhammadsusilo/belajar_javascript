@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Node Type</title>
+</head>
+<body>
+    <!-- untuk menihat detail type node 
+        untuk lebih jelas bisa lihat di website resminya
+        https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+    -->
+    Muhammad Susilo
+    <!--Ini Komentar-->
+    <h1>Ini Paragraft</h1>
+
+    <script>
+        const elements = document.body.childNodes;
+        for (const element of elements) {
+            console.info(`${element} : ${element.nodeType}`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Parameter dan Argument</title>
+  </head>
+  <body>
+    <script>
+      function tambah(a, b) {
+        return a + b;
+      }
+      // let a = parseInt(prompt("Masukkan nilai 1"));
+      // let b = parseInt(prompt("Masukkan nilai 2"));
+      // let hasil = tambah (a,b);
+      // alert("Hasil dari penjumlahan : " + hasil);
+
+      function kali(a, b) {
+        return a * b;
+      }
+
+      let hasil2 = kali(tambah(2, 3), tambah(8, 9));
+
+      console.info(hasil2);
+    </script>
+  </body>
+</html>
